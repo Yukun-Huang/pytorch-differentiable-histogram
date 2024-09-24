@@ -5,14 +5,9 @@ import torch
 # Differentiable Histogram Counting Method
 #############################################
 def differentiable_histogram(x, bins=255, min=0.0, max=1.0):
-
-    if len(x.shape) == 4:
-        n_samples, n_chns, _, _ = x.shape
-    elif len(x.shape) == 2:
-        n_samples, n_chns = 1, 1
-    else:
-        raise AssertionError('The dimension of input tensor should be 2 or 4.')
-
+    assert len(x.shape) >= 2 
+    n_samples, n_chns = x.shape[:2]
+    
     hist_torch = torch.zeros(n_samples, n_chns, bins).to(x.device)
     delta = (max - min) / (bins-1)
 
