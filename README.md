@@ -1,14 +1,14 @@
 # pytorch-differentiable-histogram
 
-## DEMO
+## Usage
 ```
->> python demo.py
+>> python differentiable_histogram.py
 ```
 
-<img src="https://github.com/hyk1996/pytorch-differentiable-histogram/blob/master/demo.jpg" height="250" width="400">
+<img src="demo.png" height="250" width="400">
 
 ## Reference
 
-[1] **valerystrizh/pytorch-histogram-loss**  [[link]](https://github.com/valerystrizh/pytorch-histogram-loss)
+[1] [valerystrizh/pytorch-histogram-loss.](https://github.com/valerystrizh/pytorch-histogram-loss)
 
-[2] **"Learning Deep Embeddings with Histogram Loss", NeurIPS 2016**  [[link]](https://arxiv.org/pdf/1611.00822.pdf)
+[2] ["Learning Deep Embeddings with Histogram Loss", NeurIPS 2016.](https://arxiv.org/pdf/1611.00822.pdf)
